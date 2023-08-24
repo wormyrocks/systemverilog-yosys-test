@@ -1,0 +1,5 @@
+plugin -i systemverilog
+read_systemverilog blink.sv
+show
+hierarchy -top blink
+synth_ecp5 -abc9 -json blink.json
