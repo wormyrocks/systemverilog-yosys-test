@@ -1,5 +1,6 @@
 plugin -i systemverilog
+read_verilog pll_core.v
+read_verilog pll_spdif.v
 read_systemverilog blink.sv
-show
 hierarchy -top blink
 synth_ecp5 -abc9 -json blink.json
